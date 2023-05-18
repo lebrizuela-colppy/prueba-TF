@@ -1,0 +1,10 @@
+[
+  {
+    "transit_gateway_id": "tgw-0f3a0153b7e7e49af",
+    "vpn_name": "customer-data-prod-svc-vpc",
+    "subnet_name": ["customer-data-prod-svc-subnet-private-1","customer-data-prod-svc-subnet-private-2"],
+    "tags": {
+      "Name": "customer-data-prod-svc-transit-gateway-attachment"
+    }
+  }
+]

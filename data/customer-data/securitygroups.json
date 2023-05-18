@@ -1,0 +1,32 @@
+[
+  {
+    "name": "customer-data-prod-svc-aurora-db-access",
+    "description": "Allow access to Aurora RDS from target accounts",
+    "ingress": [
+      {
+        "from_port": 5432,
+        "to_port": 5432,
+        "protocol": "tcp",
+        "cidr_blocks": ["10.91.0.0/20"]
+      }
+    ],
+    "tags": {
+      "Name": "customer-data-prod-svc-aurora-db-access"
+    }
+  },
+  {
+    "name": "customer-data-prod-svc-mssql-db-access",
+    "description": "Allow access to MSSQL RDS from target accounts",
+    "ingress": [
+      {
+        "from_port": 3389,
+        "to_port": 3389,
+        "protocol": "tcp",
+        "cidr_blocks": ["10.10.21.0/24"]
+      }
+    ],
+    "tags": {
+      "Name": "customer-data-prod-svc-mssql-db-access"
+    }
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "allocation": "customer-data-prod-svc-nat",
+  "subnet": "customer-data-prod-svc-subnet-public-1",
+  "tags": {
+    "Name": "customer-data-prod-svc-nat"
+  }
+}

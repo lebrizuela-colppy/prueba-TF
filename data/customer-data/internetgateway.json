@@ -1,0 +1,7 @@
+{
+    "vpc_id": "customer-data-prod-svc-vpc",
+    "tags": {
+      "Name": "customer-data-prod-svc-ig"
+    }
+  }
+  

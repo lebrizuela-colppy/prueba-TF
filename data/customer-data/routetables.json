@@ -1,0 +1,50 @@
+[
+  {
+  "vpc_id": "customer-data-prod-svc-vpc",
+  "routes": [
+    {
+      "id": "01",
+      "cidr_block": "0.0.0.0/0",
+      "gateway_id": "customer-data-prod-svc-ig"
+    }
+  ],
+  "associations": {
+    "subnets": [
+      "customer-data-prod-svc-subnet-public-2",
+      "customer-data-prod-svc-subnet-public-1"
+    ]
+  },
+  "tags": {
+    "Name": "customer-data-prod-public-rt"
+  }
+},
+{
+  "vpc_id": "customer-data-prod-svc-vpc",
+  "routes": [
+    {
+      "id": "01",
+      "cidr_block": "0.0.0.0/0",
+      "nat_gateway": "customer-data-prod-svc-nat"
+    },
+    {
+      "id": "02",
+      "cidr_block": "10.91.0.0/20",
+      "transit_gateway_id" : "tgw-0f3a0153b7e7e49af"
+    },
+    {
+      "id": "03",
+      "cidr_block": "10.10.21.0/24",
+      "transit_gateway_id" : "tgw-0f3a0153b7e7e49af"
+    }
+  ],
+  "associations": {
+    "subnets": [
+      "customer-data-prod-svc-subnet-private-2",
+      "customer-data-prod-svc-subnet-private-1"
+    ]
+  },
+  "tags": {
+    "Name": "customer-data-prod-private-rt"
+  }
+}
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "network_interface_id": null,
+    "tags": {
+      "Name": "customer-data-prod-svc-nat"
+    }
+  }
+]
